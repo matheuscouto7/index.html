@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Codificando e Decodificando</title>
+</head>
+<body>
+    <center>
+        <h3> Codificando e Decodificando</h3>
+    </center>
+    
+    <label for="selectEncode">Selecione o desejado</label>
+    <select id="selectEncode">
+        <option disabled selected>Selecione a codificação</option>
+        <option id="cifraDeCesar">Cifra de cesar</option>
+        <option id="base64">Base64</option>
+    </select>
+<form name="cipher">
+    <br>
+    <input type="text" id="deslocamento" placeholder="Digite o deslocamento aqui..." style="display: none">
+
+    <br>
+    <br>
+    Insira o texto aqui
+    <br>
+    
+    <textarea name="input" rows="2" cols="51" id="textoInicial"></textarea>
+
+    <br>
+
+    <input value="aa" type="radio" name="ninjaTurtles" id="codificar" />
+    <label for="codificar">Codificar</label>
+    <input value="aa" type="radio" name="ninjaTurtles" id="decodificar"/>
+    <label for="decodificar">Decodificar</label>
+    
+    <hr>
+       
+    <!-- <input type="radio" name="mybutton" name="Encrypt me!" onclick="tempString=doLowerCase( input.value );
+        myOffset=eval(offsetField.value);
+        answer.value = doShift(tempString, myOffset);"> -->
+    
+    <!-- <textarea name="answer" rows="2" cols="51"></textarea> -->
+   <textarea id="resultado" placeholder="Resultado sairá aqui"></textarea>
+   <br>
+   </form>
+   <!-- Base64 
+    <br>
+    <input type="text" size="25"/> -->
+        
+    <script type="text/javascript" src="/base64.js"></script>
+    <script type="text/javascript" src="/cifradecesar.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+</body>
+</html>	
