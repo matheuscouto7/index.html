@@ -31,4 +31,3 @@ function doLowerCase(theString, deslocamento, comportamento) {
         document.getElementById("resultado").value = myAnswer;
     }
 }
-
